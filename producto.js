@@ -48,7 +48,7 @@ function renderProduct(container, product, images) {
         ${dots}
       </div>
       <div class="product-detail-info">
-        <p class="eyebrow">${product.category}</p>
+        <p class="eyebrow">${product.color}</p>
         <h1>${product.name}</h1>
         <p class="product-detail-price">${formatPrice(product.price)}</p>
         <p class="product-detail-description">${product.description}</p>

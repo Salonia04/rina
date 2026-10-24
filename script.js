@@ -5,15 +5,28 @@ function initCatalog() {
   if (!grid) return;
 
   const emptyState = document.getElementById('emptyState');
-  const filterButtons = document.querySelectorAll('.filter-btn');
+  const filters = document.getElementById('filters');
+
+  function renderFilters() {
+    const colores = [...new Set(PRODUCTS.map(p => p.color))]
+      .sort((a, b) => {
+        if (a === 'NO SE') return 1;
+        if (b === 'NO SE') return -1;
+        return a.localeCompare(b, 'es');
+      });
+
+    filters.innerHTML =
+      '<button class="filter-btn active" data-filter="todos">Todos</button>' +
+      colores.map(c => `<button class="filter-btn" data-filter="${c}">${c}</button>`).join('');
+  }
 
   function renderGrid(filter = 'todos') {
     const items = filter === 'todos'
       ? PRODUCTS
-      : PRODUCTS.filter(p => p.category === filter);
+      : PRODUCTS.filter(p => p.color === filter);
 
     grid.innerHTML = items.map(p => `
-      <article class="product-card" data-category="${p.category}">
+      <article class="product-card" data-color="${p.color}">
         <a href="producto.html?id=${p.id}" class="product-image-link">
           <div class="product-image">
             <img src="${p.images[0]}" alt="${p.name}" loading="lazy">
@@ -32,14 +45,16 @@ function initCatalog() {
     emptyState.hidden = items.length !== 0;
   }
 
+  renderFilters();
   renderGrid();
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderGrid(btn.dataset.filter);
-    });
+  filters.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+
+    filters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderGrid(btn.dataset.filter);
   });
 }
 

@@ -612,3 +612,129 @@ html {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* Ajustes de tamaño para celular -------------------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  /* Header y menú */
+  .rina {
+    font-size: 30px;
+  }
+
+  .main-nav {
+    font-size: 14px;
+  }
+
+  .nav-toggle {
+    font-size: 28px;
+    padding: 4px 8px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  /* Filtros de color */
+  .filters {
+    gap: 10px 20px;
+    font-size: 13px;
+  }
+
+  .filter-btn {
+    padding: 6px 2px 8px;
+  }
+
+  /* Tarjetas del catálogo */
+  .product-name {
+    font-size: 17px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .whatsapp-btn {
+    font-size: 11px;
+    padding: 12px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Historia y clientas */
+  .story-text {
+    font-size: 19px;
+  }
+
+  .client-name {
+    font-size: 1.3rem;
+  }
+
+  .client-age {
+    font-size: 0.95rem;
+  }
+
+  /* Página de producto */
+  .product-detail-info h1 {
+    font-size: 30px;
+  }
+
+  .product-detail-price {
+    font-size: 19px;
+  }
+
+  .product-detail-description {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .whatsapp-btn.large {
+    font-size: 13px;
+    padding: 16px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .back-link {
+    font-size: 14px;
+  }
+
+  .carousel-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Footer */
+  .footer-tagline {
+    font-size: 12px;
+  }
+
+  .footer-whatsapp {
+    font-size: 13px;
+    padding: 14px 30px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+  }
+}
