@@ -617,124 +617,129 @@ html {
 
 @media (max-width: 640px) {
 
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 3px;
   }
 
   /* Header y menú */
   .rina {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .main-nav {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .nav-toggle {
-    font-size: 28px;
-    padding: 4px 8px;
+    font-size: 34px;
+    padding: 6px 10px;
   }
 
   /* Hero */
   .hero h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .hero-sub {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   /* Filtros de color */
   .filters {
-    gap: 10px 20px;
-    font-size: 13px;
+    gap: 12px 24px;
+    font-size: 16px;
   }
 
   .filter-btn {
-    padding: 6px 2px 8px;
+    padding: 8px 4px 10px;
   }
 
   /* Tarjetas del catálogo */
   .product-name {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .product-price {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .whatsapp-btn {
-    font-size: 11px;
-    padding: 12px 10px;
+    font-size: 13px;
+    padding: 14px 10px;
     width: 100%;
     text-align: center;
   }
 
   /* Historia y clientas */
   .story-text {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .client-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .client-age {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
   /* Página de producto */
   .product-detail-info h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .product-detail-price {
-    font-size: 19px;
+    font-size: 23px;
   }
 
   .product-detail-description {
-    font-size: 16px;
+    font-size: 19px;
     max-width: none;
   }
 
   .whatsapp-btn.large {
-    font-size: 13px;
-    padding: 16px 20px;
+    font-size: 15px;
+    padding: 18px 20px;
     width: 100%;
     text-align: center;
   }
 
   .back-link {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .carousel-arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 
   .carousel-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
   /* Footer */
   .footer-tagline {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footer-whatsapp {
-    font-size: 13px;
-    padding: 14px 30px;
+    font-size: 15px;
+    padding: 16px 34px;
   }
 
   .footer-copy {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
