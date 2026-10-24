@@ -13,7 +13,7 @@ function renderNotFound(container) {
     <div class="not-found">
       <p class="eyebrow">Vestido no encontrado</p>
       <h1>No pudimos encontrar esta prenda</h1>
-      <a class="whatsapp-btn" href="main.html">Volver al catálogo</a>
+      <a class="whatsapp-btn" href="index.html">Volver al catálogo</a>
     </div>
   `;
 }
@@ -55,7 +55,7 @@ function renderProduct(container, product, images) {
         <a class="whatsapp-btn large" target="_blank" rel="noopener" href="${whatsappLink(product.name)}">
           Consultar por WhatsApp
         </a>
-        <a class="back-link" href="main.html#coleccion">← Volver al catálogo</a>
+        <a class="back-link" href="index.html#coleccion">← Volver al catálogo</a>
       </div>
     </div>
   `;
